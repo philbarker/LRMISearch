@@ -1,0 +1,93 @@
+BODY {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	background-color: white;
+	margin-right: 20%;
+	margin-left: 10%;
+   color: #111111;
+}
+
+
+
+P, FORM, UL, div#cse-search-results {
+	text-align: left;
+	margin-left: 5%;
+	line-height: 130%;
+	margin-top: 0.5em;
+	margin-bottom: 1.5em;
+}
+   
+Li {
+	margin-left: 0px;
+	border-left: 0px;
+	
+}
+
+H1, H2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #330033;
+  background-color: transparent;
+  margin-top: 1.5em;
+  margin-bottom: 0px;
+  }
+
+ 
+H1 {
+  font-size: 22pt;
+  }
+
+H2 {
+  font-size: 16pt;
+  }
+  
+H3 {
+  font-size: 13pt;
+  }
+  
+H4 {
+	font-size: 11pt;
+  margin-left: 5%;
+  }
+
+H5 {
+	font-size: 10pt;
+  margin-left: 5%;
+  }
+  
+A {
+	text-decoration: none;
+	font-style : italic;
+}
+
+img {
+	border: 0px none white;
+	color: white;
+}
+
+img.rightlogo {
+  float: right;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  width: 105px;
+  }
+
+A:hover {
+	text-decoration: underline;
+	background-color : #f0f0f0;
+}
+ 
+STRONG {
+  font-weight: bold;
+  color: #330033;
+  background-color: transparent;
+  }
+
+EM {
+  font-style: italic;
+  }
+  
+  
+ 
+

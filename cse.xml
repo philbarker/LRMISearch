@@ -8,6 +8,21 @@
       <Label name="_cse_exclude_tlz9ob0l3s8" mode="ELIMINATE"/>
     </BackgroundLabels>
     <Facet>
+      <FacetItem title="Any CW Property">
+         <Label name="Any CW Property" mode="BOOST">
+            <Rewrite>more:p:CreativeWork-learningResourceType
+              OR more:p:CreativeWork-isBasedOn
+              OR more:p:CreativeWork-isBasedOnUrl
+              OR more:p:CreativeWork-typicalAgeRange
+              OR more:p:CreativeWork-timeRequired
+              OR more:p:EducationalAudience-educationalRole
+              OR more:p:CreativeWork-interactivityType
+              OR more:p:CreativeWork-educationalUse
+              OR more:p:CreativeWork-educationalAlignment
+            </Rewrite>
+            <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
+         </Label>
+      </FacetItem>
       <FacetItem title="educationalAlignment">
          <Label name="educationalAlignment" mode="BOOST">
             <Rewrite>more:p:CreativeWork-educationalAlignment</Rewrite>
@@ -25,12 +40,6 @@
             <Rewrite>more:p:CreativeWork-interactivityType</Rewrite>
             <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
          </Label>
-       </FacetItem>
-       <FacetItem title="educationalRole">
-          <Label name="educationalRole" mode="BOOST">
-             <Rewrite>more:p:EducationalAudience-educationalRole</Rewrite>
-             <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
-          </Label>
        </FacetItem>
    </Facet>
    <Facet>
@@ -66,6 +75,82 @@
            <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
         </Label>
      </FacetItem>
+     <FacetItem title="EducationalAudience">
+        <Label name="EducationalAudience" mode="BOOST">
+           <Rewrite>more:p:EducationalAudience</Rewrite>
+           <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
+        </Label>
+     </FacetItem>
+     <FacetItem title="educationalRole">
+        <Label name="educationalRole" mode="BOOST">
+           <Rewrite>more:p:EducationalAudience-educationalRole</Rewrite>
+           <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
+        </Label>
+     </FacetItem>
+     <FacetItem title="AlignmentObject">
+        <Label name="AlignmentObject" mode="BOOST">
+           <Rewrite>more:p:AlignmentObject</Rewrite>
+           <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
+        </Label>
+     </FacetItem>
+   </Facet>
+   <Facet>
+     <FacetItem title="alignmentType">
+        <Label name="alignmentType" mode="BOOST">
+           <Rewrite>more:p:AlignmentObject-alignmentType</Rewrite>
+           <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
+        </Label>
+     </FacetItem>
+     <FacetItem title="educationalFramework">
+        <Label name="educationalFramework" mode="BOOST">
+           <Rewrite>more:p:AlignmentObject-educationalFramework</Rewrite>
+           <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
+        </Label>
+     </FacetItem>
+     <FacetItem title="targetDescription">
+        <Label name="targetDescription" mode="BOOST">
+           <Rewrite>more:p:AlignmentObject-targetDescription</Rewrite>
+           <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
+        </Label>
+     </FacetItem>
+     <FacetItem title="targetName">
+        <Label name="targetName" mode="BOOST">
+           <Rewrite>more:p:AlignmentObject-targetName</Rewrite>
+           <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
+        </Label>
+     </FacetItem>
+   </Facet>
+   <Facet>
+     <FacetItem title="targetUrl">
+        <Label name="targetUrl" mode="BOOST">
+           <Rewrite>more:p:AlignmentObject-targetUrl</Rewrite>
+           <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
+        </Label>
+     </FacetItem>
+     <FacetItem title="Any LRMI Property">
+        <Label name="Any LRMI Property" mode="BOOST">
+           <Rewrite>more:p:CreativeWork-learningResourceType
+             OR more:p:CreativeWork-isBasedOn
+             OR more:p:CreativeWork-isBasedOnUrl
+             OR more:p:CreativeWork-typicalAgeRange
+             OR more:p:CreativeWork-timeRequired
+             OR more:p:EducationalAudience-educationalRole
+             OR more:p:CreativeWork-interactivityType
+             OR more:p:CreativeWork-educationalUse
+             OR more:p:CreativeWork-educationalAlignment
+             OR more:p:EducationalAudience
+             OR more:p:EducationalAudience-educationalRole
+             OR more:p:AlignmentObject
+             OR more:p:AlignmentObject-alignmentType
+             OR more:p:AlignmentObject-educationalFramework
+             OR more:p:AlignmentObject-targetDescription
+             OR more:p:AlignmentObject-targetName
+             OR more:p:AlignmentObject-targetUrl
+           </Rewrite>
+           <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
+        </Label>
+     </FacetItem>
+
    </Facet>
 </Context>
   <LookAndFeel nonprofit="false"/>
