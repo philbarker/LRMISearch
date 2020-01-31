@@ -4,11 +4,71 @@
   <Description>A Google custom search engine using LRMI/schema.org terms</Description>
   <Context>
     <BackgroundLabels>
-      <Label name="_cse_tlz9ob0l3s8" mode="FILTER"/>
+      <Label name="_cse_tlz9ob0l3s8" mode="BOOST"/>
       <Label name="_cse_exclude_tlz9ob0l3s8" mode="ELIMINATE"/>
     </BackgroundLabels>
-  </Context>
+    <Facet>
+      <FacetItem title="educationalAlignment">
+         <Label name="educationalAlignment" mode="BOOST">
+            <Rewrite>more:p:CreativeWork-educationalAlignment</Rewrite>
+            <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
+         </Label>
+      </FacetItem>
+      <FacetItem title="educationalUse">
+         <Label name="educationalUse" mode="BOOST">
+            <Rewrite>more:p:CreativeWork-educationalUse</Rewrite>
+            <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
+         </Label>
+      </FacetItem>
+      <FacetItem title="interactivityType">
+         <Label name="interactivityType" mode="BOOST">
+            <Rewrite>more:p:CreativeWork-interactivityType</Rewrite>
+            <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
+         </Label>
+       </FacetItem>
+       <FacetItem title="educationalRole">
+          <Label name="educationalRole" mode="BOOST">
+             <Rewrite>more:p:EducationalAudience-educationalRole</Rewrite>
+             <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
+          </Label>
+       </FacetItem>
+   </Facet>
+   <Facet>
+     <FacetItem title="timeRequired">
+        <Label name="timeRequired" mode="BOOST">
+           <Rewrite>more:p:CreativeWork-timeRequired</Rewrite>
+           <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
+        </Label>
+      </FacetItem>
+      <FacetItem title="typicalAgeRange">
+         <Label name="typicalAgeRange" mode="BOOST">
+            <Rewrite>more:p:CreativeWork-typicalAgeRange</Rewrite>
+            <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
+         </Label>
+       </FacetItem>
+       <FacetItem title="isBasedOnUrl">
+            <Label name="isBasedOnUrl" mode="BOOST">
+               <Rewrite>more:p:CreativeWork-isBasedOnUrl</Rewrite>
+               <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
+            </Label>
+       </FacetItem>
+       <FacetItem title="isBasedOn">
+          <Label name="isBasedOn" mode="BOOST">
+             <Rewrite>more:p:CreativeWork-isBasedOn</Rewrite>
+             <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
+          </Label>
+     </FacetItem>
+   </Facet>
+   <Facet>
+     <FacetItem title="learningResourceType">
+        <Label name="learningResourceType" mode="BOOST">
+           <Rewrite>more:p:CreativeWork-learningResourceType</Rewrite>
+           <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
+        </Label>
+     </FacetItem>
+   </Facet>
+</Context>
   <LookAndFeel nonprofit="false"/>
   <ImageSearchSettings enable="true" layout="1" />
-  <schema_org_schemas>AlignmentObject</schema_org_schemas>
+  <schema_org_schemas>CreativeWork</schema_org_schemas>
 </CustomSearchEngine>
