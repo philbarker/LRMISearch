@@ -19,6 +19,7 @@
               OR more:p:CreativeWork-interactivityType
               OR more:p:CreativeWork-educationalUse
               OR more:p:CreativeWork-educationalAlignment
+              OR more:p:CreativeWork-license
             </Rewrite>
             <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
          </Label>
@@ -151,6 +152,14 @@
         </Label>
      </FacetItem>
 
+   </Facet>
+   <Facet>
+     <FacetItem title="license">
+        <Label name="license" mode="BOOST">
+           <Rewrite>more:p:CreativeWork-license</Rewrite>
+           <IgnoreBackgroundLabels>true</IgnoreBackgroundLabels>
+        </Label>
+     </FacetItem>
    </Facet>
 </Context>
   <LookAndFeel nonprofit="false"/>
